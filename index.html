@@ -1,26 +1,59 @@
-<table>
-  <tr>
-    <td>1</td>
-    <td>2</td>
-    <td>3</td>
-    <td>4</td>
-  </tr>
-  <tr>
-    <td>5</td>
-    <td>6</td>
-    <td>7</td>
-    <td>8</td>
-  </tr>
-  <tr>
-    <td>9</td>
-    <td>10</td>
-    <td>11</td>
-    <td>12</td>
-  </tr>
-  <tr>
-    <td>13</td>
-    <td>14</td>
-    <td>15</td>
-    <td>16</td>
-  </tr>
-</table>
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div class='container'>
+      <table class='bordered'>
+        <tr>
+          <td class='center colored1'>1</td>
+          <td class='center'>2</td>
+          <td class='center'>3</td>
+          <td class='center'>4</td>
+        </tr>
+        <tr>
+          <td class='center'>5</td>
+          <td class='center colored1'>6</td>
+          <td class='center'>7</td>
+          <td class='center'>8</td>
+        </tr>
+          <td class='center'>9</td>
+          <td class='center'>10</td>
+          <td class='center colored1'>11</td>
+          <td class='center'>12</td>
+        </tr>
+        <tr>
+          <td class='center'>13</td>
+          <td class='center'>14</td>
+          <td class='center'>15</td>
+          <td class='center colored1'>16</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class='conainer'>
+      <div class='row'>
+        <button class='col s4 m12'>Mobile</button>
+        <button class='col s4 m12'>Optimized</button>
+        <button class='col s4 m12'>Buttons!</button>
+
+
+
+    <!-- jQuery Section -->
+
+    <script>
+      $( document ).ready(function() {
+        console.log( "ready!" );
+        $( '.colored1' ).css({
+          backgroundColor: "blue"
+        });
+      });
+    </script>
+
+  </body>
+</html>
