@@ -11,40 +11,61 @@
     <div class='container'>
       <table class='bordered'>
         <tr>
-          <td class='center colored1'>1</td>
-          <td class='center'>2</td>
-          <td class='center'>3</td>
-          <td class='center'>4</td>
+          <td class='center colored1'>Daniel</td>
+          <td class='center'>Stephen</td>
+          <td class='center'>Glover</td>
+          <td class='center'>Son</td>
         </tr>
         <tr>
-          <td class='center'>5</td>
-          <td class='center colored1'>6</td>
-          <td class='center'>7</td>
-          <td class='center'>8</td>
+          <td class='center'>Michaela</td>
+          <td class='center colored1'>Sue</td>
+          <td class='center'>Glover</td>
+          <td class='center'>Daughter</td>
         </tr>
-          <td class='center'>9</td>
-          <td class='center'>10</td>
-          <td class='center colored1'>11</td>
-          <td class='center'>12</td>
+          <td class='center'>Logan</td>
+          <td class='center'>Michael</td>
+          <td class='center colored1'>Glover</td>
+          <td class='center'>Son</td>
         </tr>
         <tr>
-          <td class='center'>13</td>
-          <td class='center'>14</td>
-          <td class='center'>15</td>
-          <td class='center colored1'>16</td>
+          <td class='center'>Nicolle</td>
+          <td class='center'>Jade</td>
+          <td class='center'>Glover</td>
+          <td class='center colored1'>Daughter</td>
         </tr>
       </table>
+
+    <br />
+    <br />
+    <br />
+
+    <div class='row'>
+      <div class='container'>
+        <button class='btn green col s12 m3'>Mobile</button>
+        <button class='btn blue col s12 m3'>Optimized</button>
+        <button class='btn red col s12 m3'>Buttons!</button>
+      </div>
     </div>
 
-    <div class='conainer'>
-      <div class='row'>
-        <button class='col s4 m12'>Mobile</button>
-        <button class='col s4 m12'>Optimized</button>
-        <button class='col s4 m12'>Buttons!</button>
+  </div>
+
+  <div class="container">
+    <input id='y' value='123456789'/>
+    <br/>
+    <input id='y_hidden'/>
+  </div>
 
 
+  <!-- Native JS -->
 
-    <!-- jQuery Section -->
+    <script type="text/javascript">
+      var y = document.getElementById('y');
+      var hidden = document.getElementById('y_hidden');
+      hidden.value = new Array(y.value.length-3).join('x') + y.value.substr(y.value.length-4, 4);
+    </script>
+
+
+  <!-- jQuery Section -->
 
     <script>
       $( document ).ready(function() {
